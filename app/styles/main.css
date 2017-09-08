@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento|Cabin|Pacifico|Permanent+Marker" );
+body {
+/*	background-color: cornsilk;
+*/
+	font-family: sans-serif;
+}
+
+
+.notes {
+	margin: 0.5em;
+	padding-left: 0;
+
+	max-width: 13em;
+	list-style: none;
+}
+
+.lane {
+	display: inline-block;
+	margin: 1em;
+	background-color: #E2E4E6;
+	border: 1px solid #E2E4E6;
+	border-radius: 0.5em;
+	min-width: 10em;
+	max-width: 15em;	
+	vertical-align: top;
+}
+
+.lane-header {
+	overflow: auto;
+	padding: .75em;
+	padding-bottom: .25em;
+	color: #4D4D4D;
+	background-color: #E2E4E6;
+	border-top-left-radius: 0.25em;
+	border-top-right-radius: 0.25em;
+}
+.lane-header .value{
+	font-weight: bold;
+	font-size: 1rem;
+}
+.lane-name {
+	float: left;
+}
+.lane-add-note {
+	float: right;
+	margin-right: 0.5em;
+}
+.lane-delete {
+	float: right;
+	margin-left: 0.5em;
+	color:;
+	visibility: hidden;
+}
+.lane-header:hover .lane-delete {
+	visibility: visible;
+}
+
+.add-lane{
+	margin-left: 2em;
+	margin-top: 2em;
+	border-radius: .25em;
+}
+
+.add-lane, .lane-add-note button {
+	cursor: pointer;
+	color: #8C8C8C;
+	background-color: #E2E4E6;
+	border: 0px solid #ccc;
+}
+.lane-delete button {
+	padding: 0;
+	cursor: pointer;
+	color: black;
+	background-color: rgba(0, 0, 0, 0);
+	border: 0;
+}
+
+.note {
+	overflow: auto;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+	background-color: #fdfdfd;
+	box-shadow: 0 0 0.1em .01em rgba(0,0,0,.3);
+	border-radius: 4px;
+}
+.note:hover {
+	box-shadow: 0 0 0.3em .03em rgba(0,0,0,.7);
+transition: .6s;
+}
+.note .value {
+	display: inline-block;
+	font-weight: 300;
+	font-size: .9rem;
+}
+.note .editable {
+	float: left;
+}
+.note .delete {
+	float: right;
+	padding: 0;
+	background-color: #fdfdfd;
+	border: none;
+	cursor: pointer;
+	visibility: hidden;
+}
+.note:hover .delete {
+	visibility: visible;
+}
+
+.main{
+	display: grid;
+	grid-template-columns: 3fr 30em;
+	grid-template-rows: 60px 80em;
+	background-color: #FFED7C;
+}
+.header{
+	color:white;
+	grid-area: 1 / 1 / 2 /3;
+	background-color: #FFD151;
+	border-style: solid;
+	border-color: #FFD151;
+	border-bottom-color: #FFD400;
+	padding-left: 50px;
+	padding-bottom: 15px;
+}
+.header h1{
+	margin-top: .20em;
+	font-family: 'Cabin';
+}	
+
+
+.boardBox{
+	grid-area: 2/ 1/ 2 / 1;
+}
+.commentBox{
+	background-color: #BBB;
+	grid-area: 1/ 2/ 2/ 2;
+	height: 75em;
+	border-style: solid;
+	border-color: #FFDDA1;;
+	padding: 20px;
+	border-top-width: 0px;
+}
+.commentBox a{
+	margin-left: 5em;
+	color: #323232;
+	text-decoration: none;
+}
+.commentBox a:visited{
+	color: #323232;
+}
+hr{
+	border-top: 2px dotted #8c8b8b;
+	border-bottom: 2px dotted #fff;
+}
+
+
+
+
+
+
+
